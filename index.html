@@ -2,8 +2,35 @@
 <html>
 <head>
 	<title></title>
+	<style type="text/css">
+		img{
+			width: 200px;
+			margin: 10px;
+		}
+
+	</style>
 </head>
 <body>
-	<h1>HELLO GIT</h1>
+	<input type="file" id="file" value="erer">
+	<input type="button" id="btn" value="Добавить">
+	<input type="text" name="" value="\u00D7">
+	<div id="images">
+		<img src="images/01.jpg">
+		<img src="images/02.jpg">
+		<img src="images/03.jpg">
+	</div>
+
+
+<script type="text/javascript">
+	var f = document.getElementById('file');
+	var file = f.value.split('\\');
+	var fileName = file[file.length-1];
+	var btn = document.getElementById('btn');
+	btn.onclick = function () {
+		console.log(file);
+		console.log(f.value);
+	}
+
+</script>
 </body>
 </html>
