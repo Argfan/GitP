@@ -8,27 +8,37 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="todo">		
+		<div class="todo">
 			<div class="jumbotron">
 				<h2 class="display-4">Мой список дел</h2>
 				<div class="input-group mb-3">
-				  <input type="text" class="form-control" placeholder="Добавить задачу" aria-label="Recipient's username" aria-describedby="button-addon2">
+				  <input type="text" class="form-control" placeholder="Добавить задачу" aria-label="Recipient's username" aria-describedby="add" id="input">
 				  <div class="input-group-append">
-				    <button class="btn btn-primary" type="button" id="button-addon2">Добавить</button>
+				    <button class="btn btn-primary" type="button" id="add">Добавить</button>
 				  </div>
 				</div>
 
 			</div>
 
-			<div class="card">
+			
 			 
-			  <ul class="list-group list-group-flush">
-			    <li class="list-group-item">Cras justo odio</li>
-			    <li class="list-group-item">Dapibus ac facilisis in</li>
-			    <li class="list-group-item">Vestibulum at eros</li>
+			  <ul class="list-group" id="list">
+			    <li class="list-group-item d-flex justify-content-between">						
+			    	<span>Cras justo odio 1</span>
+			    	<button class="btn btn-danger btn-sm"><i class="fa fa-close"></i></button>
+			  	</li>
+			    <li class="list-group-item d-flex justify-content-between">
+			    	<span>Cras justo odio 2</span>
+			    	<button class="btn btn-danger btn-sm"><i class="fa fa-close"></i></button>
+			    </li>
+			    <li class="list-group-item d-flex justify-content-between">
+			    	<span>Cras justo odio 3</span>
+			    	<button class="btn btn-danger btn-sm"><i class="fa fa-close"></i></button>
+			    </li>
 			  </ul>
-			</div>
+			
 		</div>
 	</div>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

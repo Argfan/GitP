@@ -2,3 +2,24 @@
 	max-width: 800px;
 	margin: 50px auto
 }
+
+.checked{
+	background-color: #eee;
+	color: #aaa;
+}
+
+.checked .btn-danger {
+	background-color: #d8707a;
+    border-color: #d8707a;
+}.checked .btn-danger:hover {
+	background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.jumbotron {
+    background-color: #5a68b3;
+}
+
+.display-4 {
+    color: white;
+}
