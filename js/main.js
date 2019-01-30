@@ -5,7 +5,7 @@ add.onclick = add_element;
 
 
 list.addEventListener('click', function(ev) {
-  if (ev.target.tagName == 'LI') {
+  if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
 }, false);
